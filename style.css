@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+  }
+
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group {
+    margin: 20px 0;
+   
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #00b3ff; 
+  }
+
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #5dddc1dc; 
+    border-radius: 5px;
+    background-color: #f7f7f7; 
+    color: #333; 
+    box-sizing: border-box; 
+  }
+  
+
+  .gender-field, .agree-field {
+    display:flex;
+    justify-content: space-around;
+    margin:30px;
+  }
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .disabled {
+    background-color: #afaaaa;
+    color: #474646;
+    cursor: not-allowed;
+  }
+
+  button:hover {
+    background-color: #0b37bd;
+  }
+
+
+ 
+
+   

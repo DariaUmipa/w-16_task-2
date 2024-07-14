@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />	
+</head>
+<body>
+        <div class="container" >
+            <form name="registrationForm"  novalidate>
+              <h1>Заполните форму</h1>
+              <div class="form-group">
+                <label for="name">Имя:</label>
+                <input  type="text" id="name" name="name"  placeholder="Введите своё имя"  class = "input-field " required />
+                <span id='errorNameMessage'></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input   type="email" id="email" name="email" placeholder="Введите свой адрес электронной почты" class = "input-field "required />
+                <span id='errorEmailMessage'></span>
+              </div>
+              <div class="form-group">
+                <label for="age">Возраст:</label>
+                <input type="number" id="age" name="age"placeholder="Введите свой возраст"  class = "input-field " required />
+              </div>
+              <span id='errorAgeMessage'></span>
+              <div class="gender-field">
+                <label>Пол:</label><br/>
+                <label for="male"
+                  >Мужской
+                  <input type="radio" name="gender" value="male" id="male"  class = "input-field " required />
+                </label>
+                <label for="female">Женский
+                  <input type="radio"  name="gender" value="female" id="female"  class = "input-field " required />        
+                </label>
+              </div>
+              <div id='errorGenderMessage'></div> 
+
+              <div class="form-group">
+                <label for="profession">Профессия:</label>
+                <select id="profession" name="profession"  placeholder="Выберите свою профессию"  class = "input-field " required>
+                  <option value="nothing"></option> 
+                  <option value="doctor">Врач</option>
+                  <option value="programmer">Программист</option>
+                  <option value="teacher">Учитель</option>
+                  <option value="designer">Дизайнер</option>
+                  <option value="engineer">Инженер</option>
+                  <option value="seller">Продавец</option>
+                  <option value="other">Другое</option>
+                </select>
+               
+              </div>
+              <div id='errorSelectMessage'></div> 
+              <div class="form-group">
+              <label for="password">Пароль:</label>
+              <input type="password" id="password" placeholder="Придумайте пароль" minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$"   class = "input-field " required>
+            </div>
+            <span id='errorPasswordMessage'></span>
+            <div class="agree-field">
+              <input type="checkbox" id="agree"  class = "input-field " required>
+              <label for="agree">Я согласна/согласен с условиями</label> 
+            </div>
+            <span   id = 'errorAgreeMessage'></span>
+             
+              <button  name = "submitBtn" id ="submitBtn" type="submit"  >Отправить  </button>
+            </form>
+          </div>
+    
+
+    <script src="task-2.js"></script>
+
+
+</body>
+</html>
+
